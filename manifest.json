@@ -1,0 +1,51 @@
+{
+    "short_name": "Cine",
+    "name": "App de cine dinámica",
+    "start_url": "index.html",
+    "background_color": "#1F2A37",
+    "theme_color": "#1F2A37",
+    "display": "standalone",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "img/icons/camara512.png",
+            "type": "image/png",
+            "sizes": "512x512" 
+        },
+        {
+            "src": "img/icons/camara256.png",
+            "type": "image/png",
+            "sizes": "256x256" 
+        },
+        {
+            "src": "img/icons/camara128.png",
+            "type": "image/png",
+            "sizes": "128x128" 
+        },
+        {
+            "src": "img/icons/camara96.png",
+            "type": "image/png",
+            "sizes": "96x96" 
+        },
+        {
+            "src": "img/icons/camara72.png",
+            "type": "image/png",
+            "sizes": "72x72" 
+        },
+        {
+            "src": "img/icons/camara64.png",
+            "type": "image/png",
+            "sizes": "64x64" 
+        },
+        {
+            "src": "img/icons/camara48.png",
+            "type": "image/png",
+            "sizes": "48x48" 
+        },
+        {
+            "src": "img/icons/camara32.png",
+            "type": "image/png",
+            "sizes": "32x32" 
+        }
+    ]
+}

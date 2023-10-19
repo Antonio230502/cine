@@ -1,0 +1,89 @@
+#compraPelicula {
+    display: flex;
+    flex-flow: column wrap;
+    height: 670px;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.imagen{
+    width: 130px;
+    margin: 0 auto;
+}
+
+#imagenFormulario {
+    width: 130px;
+    height: 200px;
+}
+
+.imagenTabla {
+    width: 65px;
+    height: 100px;
+}
+
+#btnEditar {
+    display: none;
+}
+
+
+/* Estilos para el formulario */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+/* Estilos para las etiquetas */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Estilos para los campos de entrada */
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    /* border: none; */
+    /* margin-bottom: 20px; */
+}
+
+/* Estilos para el botón de enviar */
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* Estilos para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+.table-primary > th{
+    text-align: center;
+}
+
+.table-responsive{
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+span{
+    color: #fb3939;
+}
+
+/* DIsplay standalone, minimal-ui, browser */

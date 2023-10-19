@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1F2A37">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="manifest.json">
+    <title>Cine</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img/camara.png" alt="" width="30px" height="30px">
+                Tizanepolis
+            </a>
+        </div>
+    </nav>
+    <form id="compraPelicula" action="">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" required>
+            <label for="nombre">Nombre</label>
+            <span id="errorNombre"></span>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="correo" placeholder="Ingresa tu correo electrónico" required>
+            <label for="correo">Correo</label><span id="errorEmail"></span>
+        </div>
+        <select id="pelicula" class="text-light-emphasis" required>
+            <option value="default" selected disabled hidden>Seleccione una película</option>
+            <option value="Elementos">Elementos</option>
+            <option value="La monja 2">La monja 2</option>
+            <option value="Cars">Cars</option>
+            <option value="La noche del demonio">La noche del demonio</option>
+            <option value="Rocky Balboa">Rocky Balboa</option>
+        </select>
+        <span id="errorPelicula"></span>
+        <div class="imagen">
+            <img id="imagenFormulario" src="img/default.jpeg" alt="">
+        </div>
+        <div class="form-floating mb-3">
+            <input type="number" class="form-control" id="boletos" placeholder="Ingresa la cantidad de boletos a comprar" required>
+            <label for="boletos">Cantidad de boletos</label>
+            <span id="errorBoletos"></span>
+        </div>
+
+        <button id="btnComprar" class="btn btn-success">Comprar boletos</button>
+        <button id="btnEditar" class="btn btn-warning">Editar registro</button>
+    </form>
+    <div class="table-responsive">
+        <table class="table table-hover">
+            <thead>
+                <tr class="table-primary">
+                    <th>Nombre</th>
+                    <th>Correo</th>
+                    <th>Película</th>
+                    <th>Imagen</th>
+                    <th>Número de boletos</th>
+                    <th>Total</th>
+                    <th>Editar / Eliminar</th>
+                </tr>
+            </thead>
+            <tbody data-historialCompras>
+            </tbody>
+        </table>
+    </div>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
