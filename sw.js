@@ -1,4 +1,4 @@
-let CACHE_NAME = "Boveda3"
+let CACHE_NAME = "Boveda Principal"
 
 self.addEventListener('install', e => {
 
@@ -15,7 +15,8 @@ self.addEventListener('install', e => {
             cache.add('index.html'),
             cache.add('js/app.js'),
             cache.add('css/style.css'),
-            cache.add('sw.js')
+            cache.add('sw.js'),
+            cache.add('manifest.json')
     })
 
     // const recursos = caches.open('Boveda Recursos').then(cache => {
