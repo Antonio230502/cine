@@ -1,4 +1,4 @@
-"serviceWorker" in navigator && navigator.serviceWorker.register("../sw.js")
+"serviceWorker" in navigator && navigator.serviceWorker.register("/cine/sw.js")
 
 const inputNombre = document.querySelector("#nombre")
 const inputCorreo = document.querySelector("#correo")
